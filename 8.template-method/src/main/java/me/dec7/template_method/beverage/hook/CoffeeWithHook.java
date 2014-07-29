@@ -1,4 +1,4 @@
-package me.dec7.template_method.beverage;
+package me.dec7.template_method.beverage.hook;
 
 import java.io.BufferedReader;
 import java.io.IOException;
