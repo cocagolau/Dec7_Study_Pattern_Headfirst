@@ -1,4 +1,4 @@
-package me.dec7.pattern.factory.method;
+package me.dec7.pattern.factory.method.product;
 
 public class Pizza {
 

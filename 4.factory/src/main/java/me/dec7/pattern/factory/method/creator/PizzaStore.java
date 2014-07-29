@@ -1,4 +1,6 @@
-package me.dec7.pattern.factory.method;
+package me.dec7.pattern.factory.method.creator;
+
+import me.dec7.pattern.factory.method.product.Pizza;
 
 
 public abstract class PizzaStore {
@@ -15,6 +17,6 @@ public abstract class PizzaStore {
 		return pizza;
 	}
 	
-	abstract Pizza createPizza(String type);
+	abstract public Pizza createPizza(String type);
 
 }
