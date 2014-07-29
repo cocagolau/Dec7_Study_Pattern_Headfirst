@@ -3,7 +3,7 @@ package me.dec7.composite;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu implements IMenu {
 	
 	ArrayList<MenuItem> menuItems;
 

@@ -1,9 +1,9 @@
-package me.dec7.composite;
+package me.dec7.iterator;
 
 import java.util.Hashtable;
 import java.util.Iterator;
 
-public class CafeMenu implements IMenu {
+public class CafeMenu implements Menu {
 
 	Hashtable menuItems = new Hashtable();
 
