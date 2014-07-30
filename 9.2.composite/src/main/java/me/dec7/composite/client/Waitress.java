@@ -1,6 +1,8 @@
-package me.dec7.composite;
+package me.dec7.composite.client;
 
 import java.util.Iterator;
+
+import me.dec7.composite.component.MenuComponent;
 
 
 public class Waitress {

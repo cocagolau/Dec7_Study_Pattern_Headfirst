@@ -1,20 +1,29 @@
 package me.dec7.composite;
 
+import me.dec7.composite.client.Waitress;
+import me.dec7.composite.component.MenuComponent;
+import me.dec7.composite.composite.Menu;
+import me.dec7.composite.leaf.MenuItem;
+
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		MenuComponent pancakeHouseMenu = new Menu("팬케이크 하우스 메뉴", "아침 메뉴");
-		MenuComponent dinerMenu = new Menu("객체마을 식당 메뉴", "점심 메뉴");
-		MenuComponent cafeMenu = new Menu("카페 메뉴", "저녁 메뉴");
-		MenuComponent dessertMenu = new Menu("디저트 메뉴", "디저트, 디저트!~");
-		
 		MenuComponent allMenus = new Menu("전체 메뉴", "전체");
+		
+		MenuComponent pancakeHouseMenu = new Menu("팬케이크 하우스 메뉴", "아침 메뉴");
 		allMenus.add(pancakeHouseMenu);
+		
+		MenuComponent dinerMenu = new Menu("객체마을 식당 메뉴", "점심 메뉴");
 		allMenus.add(dinerMenu);
+		
+		MenuComponent cafeMenu = new Menu("카페 메뉴", "저녁 메뉴");
 		allMenus.add(cafeMenu);
+		
+		MenuComponent dessertMenu = new Menu("디저트 메뉴", "디저트, 디저트!~");
 		allMenus.add(dessertMenu);
+		
 		
 		// 메뉴 추가
 		cafeMenu.add(new MenuItem("베지버고와 에어프라이", "통일빵, 상추, 토마토 첨가된 버거", true, 3.99));
@@ -36,6 +45,7 @@ public class Main {
 		dessertMenu.add(new MenuItem("콜라", "중독성 짱", false, 200));
 		
 		
+		// client
 		Waitress waitress = new Waitress(allMenus);
 		
 		waitress.printMenu();

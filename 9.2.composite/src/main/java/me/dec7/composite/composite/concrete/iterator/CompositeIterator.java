@@ -1,7 +1,10 @@
-package me.dec7.composite;
+package me.dec7.composite.composite.concrete.iterator;
 
 import java.util.Iterator;
 import java.util.Stack;
+
+import me.dec7.composite.component.MenuComponent;
+import me.dec7.composite.composite.Menu;
 
 public class CompositeIterator implements Iterator {
 

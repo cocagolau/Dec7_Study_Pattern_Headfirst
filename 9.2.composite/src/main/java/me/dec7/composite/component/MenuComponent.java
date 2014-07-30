@@ -1,8 +1,11 @@
-package me.dec7.composite;
+package me.dec7.composite.component;
 
 import java.util.Iterator;
 
 public abstract class MenuComponent {
+	
+	
+	
 	
 	public void add(MenuComponent menuComponent) {
 		
@@ -21,6 +24,9 @@ public abstract class MenuComponent {
 		throw new UnsupportedOperationException();
 		
 	}
+	
+	
+	
 	
 	
 	public String getName() {

@@ -1,6 +1,9 @@
-package me.dec7.composite;
+package me.dec7.composite.leaf;
 
 import java.util.Iterator;
+
+import me.dec7.composite.component.MenuComponent;
+import me.dec7.composite.composite.concrete.iterator.NullIterator;
 
 public class MenuItem extends MenuComponent {
 	

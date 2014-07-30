@@ -1,7 +1,10 @@
-package me.dec7.composite;
+package me.dec7.composite.composite;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import me.dec7.composite.component.MenuComponent;
+import me.dec7.composite.composite.concrete.iterator.CompositeIterator;
 
 public class Menu extends MenuComponent {
 	

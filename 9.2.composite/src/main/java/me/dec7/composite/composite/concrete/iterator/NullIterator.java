@@ -1,4 +1,4 @@
-package me.dec7.composite;
+package me.dec7.composite.composite.concrete.iterator;
 
 import java.util.Iterator;
 
